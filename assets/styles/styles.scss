@@ -1,0 +1,292 @@
+/* Font Family  */
+@font-face {
+    font-family: "Brutal Type", sans-serif;
+    src: url(../fonts/font/BrutalType-Bold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Brutal Type", sans-serif;
+    src: url(../fonts/font/BrutalType.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* End of Font Family */
+/* Mini-Normalize */
+* {
+    font-family: "Bruta Type", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* End of Mini-Normalize */
+/* Container Vacancy */
+.vacancy {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    /*Header of Vacancy */
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1.7rem;
+        border-bottom: 1px solid #dee2e6;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.8rem;
+        color: rgba(0, 0, 0, .5);
+    }
+
+    &__nameCompany {
+        font-size: 12.32px;
+        color: #7f8183;
+
+        span {
+            border: 1px solid transparent;
+            background-color: #a92948;
+            border-radius: 50%;
+            width: 25px;
+            color: #fff;
+            font-size: 12.32px;
+            margin-right: 12px;
+            padding: 5px 8px;
+        }
+
+    }
+
+    &__headerIcons {
+        display: flex;
+        flex-direction: row;
+
+        .fa-eye {
+            margin-right: 10px;
+            color: #7f8183;
+        }
+
+        div {
+            color: #7f8183;
+            margin-right: 25px;
+        }
+
+        .fa-heart {
+            color: #7f8183;
+
+            &:hover {
+                color: #ff8686;
+            }
+        }
+    }
+
+    /* Main */
+    /* Header Info Vacancy */
+    &__main {}
+
+    &__title {
+        font-size: 17.6px;
+        margin-bottom: 9.68px;
+    }
+
+    &__deadline {
+        display: inline-block;
+        color: #de7d0b;
+        border: 1px solid #de7d0b;
+        border-radius: 5px;
+        padding: 6.16px 10.56px;
+        margin: 0 26.4px 4.4px 0;
+        font-size: 12.32px;
+
+        .fa-clock {
+            margin-right: 5px;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+    }
+
+    &__linkHeader {
+        color: rgba(0, 0, 0, .5);
+
+        &:hover {
+            color: #214DDE;
+            transition: 0.3s linear;
+        }
+
+    }
+
+    /* End of Info Vacancy  */
+
+    /* Vacancy About */
+    &__aboutHeader {
+        margin: 15px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    &__aboutLink {
+        margin-right: 15px;
+        display: inline-block;
+        font-size: 12.32px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .vacancy__aboutLink--active {
+        border-bottom: 3px solid #214DDE;
+        padding: 0 15px 8px 15px;
+
+    }
+
+    /* End of Vacancy About */
+    /* Vacancy content */
+    &__content {
+        display: flex;
+
+    }
+
+    &__contentTitle {
+        font-size: 12.32px;
+        margin-bottom: 17.6px;
+    }
+
+    ul li {
+        list-style-type: none;
+
+        &::before {
+            content: "-";
+            margin-right: 4px;
+        }
+
+        span {
+            line-height: 1.5;
+            font-size: 12.32px;
+
+        }
+    }
+
+    h4 {
+        margin: 20px 0;
+
+        span {
+            font-weight: 300;
+        }
+    }
+
+
+
+    /* End of Vacancy Content */
+
+    /* Subscribe */
+    &__subscribe {
+        background-color: rgba(41, 182, 246, .05);
+        box-shadow: 0 2px 0 #29b6f6;
+        border-radius: 8px;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px 0;
+        margin-bottom: 25px;
+    }
+
+    &__logoTG {
+        margin-right: 15px;
+    }
+
+    /* End of Subscribe */
+
+    /* Buttons */
+    &__buttons {
+        padding: 15px;
+
+
+    }
+
+    &__buttonsPrint {
+        color: #7f8183;
+        margin: 5px;
+        font-size: 12.32px;
+        text-decoration: none;
+        margin-right: 15px;
+
+        .fa-print {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+    }
+
+    &__buttonsReport {
+        color: #e31717;
+        font-size: 12.32px;
+        text-decoration: none;
+        .fa-flag{
+            margin-right:5px;
+            display: inline-block;
+        }
+    }
+
+    /* End of Buttons */
+
+    /* Fixed Button */
+    &__buttonApply{
+        background-color: #0c4dde;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        width: 10%;
+        margin-bottom:25px;
+        position: fixed;
+        right: 10px;
+        bottom: 0;
+        z-index: 11;
+        &:hover{
+            background-color:#fff;
+            border: 1px solid #0c4dde ;
+            
+
+        }
+        a{
+            color:#fff;
+            display: flex;
+            font-size: 12.32px;
+            padding:10px;
+            text-decoration: none;
+            &:hover{
+                color: #0c4dde;
+                transition: .3s linear;
+            }
+            .fa-square-check{
+                display: inline-block;
+                margin-right: 5px;
+
+            }
+            
+        }
+    }
+
+
+    /* End of Fixed Button */
+
+
+
+
+
+
+
+
+
+
+    /* End of Main */
+
+
+    /* End of Header of Vacancy */
+
+}
+
+/* End of Container Vacancy */
